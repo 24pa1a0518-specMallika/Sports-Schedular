@@ -1,79 +1,97 @@
-# SPORTS SCHEDULER
+# Sports Scheduler
 
-A full-stack web application built for the **WD201 Final Project**. Sports Scheduler enables players and admins to organize, join, manage, and report on sports sessions.
+## About the Project
 
----
+Sports Scheduler is a full-stack web application that helps users create, discover, and join sports sessions with other players.
 
-## 🚀 Key Features
+Users can sign up and log in to the application, create sports sessions by selecting a sport, date, time, venue, and number of players, and join available sessions created by other users.
 
-### Authentication & User Profile Management
-- **JWT & bcryptjs** password security.
-- **Profile Management (`/profile`)**: All users (Players & Admins) can update their **User Name** and change their **Password**.
-- **Role-Based Authorization**: Separate features for `PLAYER` and `ADMIN`.
-- **Secure Admin Setup**: Admin account registration key (`adminsecret123`) or default pre-seeded credentials (`admin@sportsscheduler.com` / `admin123`).
+The application also provides an Admin role for managing sports and viewing reports about session activity and sport popularity.
 
-### Player Capabilities & Schedule Safety
-- **Schedule Conflict Prevention**: Automatically blocks users from creating or joining multiple sessions scheduled on the **same Date and Time** with clear error warnings.
-- **Dashboard**: Interactive hero slider and quick action cards.
-- **Create Session**: Schedule a game by specifying sport, date, time, venue, and required players.
-- **Join Session**: Browse available sessions and join with one click.
-- **My Sessions**: Track created and joined sessions grouped by *Upcoming*, *Completed*, and *Cancelled*.
-- **Cancel Session**: Session creators can cancel their games by providing a required cancellation reason visible to all joined players.
+The main goal of Sports Scheduler is to make organizing and participating in sports activities simple, convenient, and easy to manage.
+## Features
 
-### Admin Capabilities & Analytics
-- **Manage Sports (`/admin/sports`)**: Create new sports. **Clickable sport cards** drill down directly into sessions scheduled for that sport.
-- **Reports & Player Analytics (`/admin/reports`)**:
-  - Filter sessions by custom date range (`From Date` to `To Date`).
-  - View total registered players counter.
-  - **Sport Popularity Bar Chart**: Visual representation of sessions and participant slots per sport.
-  - **Registered Players & Game Overview**: Expandable list showing every registered user (Name, Email, Role, Joined Date) and the exact sports/sessions they signed up for.
+### Player Features
 
----
+- User registration and login
+- Secure password authentication
+- Create sports sessions
+- View available sports sessions
+- Join available sessions
+- View joined and created sessions
+- View upcoming and completed sessions
+- Cancel sessions created by the user
+- Provide a cancellation reason
+- View cancellation information
+- Responsive and mobile-friendly interface
 
-## 🛠️ Tech Stack
+### Admin Features
 
-- **Frontend**: React, Vite, React Router DOM, Axios, Lucide React Icons, Custom CSS Design System.
-- **Backend**: Node.js, Express.js, MongoDB, Mongoose, JWT (`jsonwebtoken`), `bcryptjs`, `cors`, `dotenv`.
+- Admin authentication
+- Create and manage sports
+- View sports created by the admin
+- Create and join sports sessions
+- View session reports
+- Select a date range for reports
+- View the number of sessions played
+- View the relative popularity of different sports
 
----
+### Additional Features
 
-## ⚙️ Environment Variables
+- Role-based access control
+- Protected routes
+- JWT authentication
+- MongoDB database
+- Form validation
+- Loading and error states
+- Success messages
+- Responsive dashboard
+- Sports session cards
+- Dashboard hero slider
+- ## Technology Stack
 
-### Backend (`sports-scheduler/backend/.env`)
-```env
-PORT=5000
-MONGO_URI=mongodb://127.0.0.1:27017/sports-scheduler
-JWT_SECRET=supersecretjwtkey_sports_scheduler_2026
-ADMIN_SEED_SECRET=adminsecret123
-```
+### Frontend
+- React.js
+- Vite
+- React Router
+- Axios
+- Bootstrap 5
+- CSS
 
-### Frontend (`sports-scheduler/frontend/.env`)
-```env
-VITE_API_URL=http://localhost:5000/api
-```
+### Backend
+- Node.js
+- Express.js
 
----
+### Database
+- MongoDB
+- Mongoose
 
-## 🔑 Admin Login
+### Authentication
+- JWT
+- bcryptjs
 
-* **Email**: `admin@sportsscheduler.com`
-* **Password**: `admin123`
+### Other Tools
+- Git
+- GitHub
+- VS Code
+- ## Screenshots
 
-*(Or register a new admin at `/signup` with Admin Secret `adminsecret123`)*
+### Home Page
 
----
+![Home Page](Screenshots\Availablesessions.jpeg)
 
-## 🚦 How to Run the Application
+### Dashboard
 
-### 1. Start Backend Server
-```bash
-cd sports-scheduler/backend
-npm run dev
-```
+![Dashboard](screenshots/dashboard.png)
 
-### 2. Start Frontend Server
-```bash
-cd sports-scheduler/frontend
-npm run dev
-```
-Open `http://localhost:5173` in your browser.
+### Create Session
+
+![Create Session](screenshots/create-session.png)
+
+### Available Sessions
+
+![Available Sessions](screenshots/sessions.png)
+
+### Admin Reports
+
+![Admin Reports](screenshots/reports.png)
