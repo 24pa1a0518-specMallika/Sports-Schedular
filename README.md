@@ -78,11 +78,11 @@ The main goal of Sports Scheduler is to make organizing and participating in spo
 
 ### Home Page
 
-![Home Page](Screenshots\Availablesessions.jpeg)
+![Availablesessions](Screenshots\Availablesessions.jpeg)
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](Screenshots\Dashboard.jpeg)
 
 ### Create Session
 
@@ -90,8 +90,16 @@ The main goal of Sports Scheduler is to make organizing and participating in spo
 
 ### Available Sessions
 
-![Available Sessions](screenshots/sessions.png)
+![manage sports](Screenshots\managesports.jpeg)
 
 ### Admin Reports
 
 ![Admin Reports](screenshots/reports.png)
+
+### Admin reports
+
+![Admin reports2](screenshots\Reports2.jpeg)
+
+### playerdashboard
+
+![payerdashboard](Screenshots\playerdashboard.jpeg)
